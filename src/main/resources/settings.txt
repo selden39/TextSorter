@@ -1,0 +1,5 @@
+inputPath=src/main/resources/input.txt
+orderBy=asc
+outputPath=src/main/resources/output.txt
+
+a12  34 = лдж  лд
