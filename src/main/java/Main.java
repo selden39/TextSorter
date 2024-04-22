@@ -4,7 +4,15 @@ import java.util.Collections;
 public class Main {
 
     public static void main(String[] args) {
-        String settingsUri = "src/main/resources/settings.txt";
+        String settingsUri;
+        if (args.length == 0) {
+            settingsUri = "settings.txt";
+            System.out.println("default sett");
+        } else {
+            settingsUri = args[0];
+            System.out.println("manual sett");
+        }
+        // String settingsUri = "src/main/resources/settings.txt";
 
         // ------ получаем настройки
         SettingsProcessor settingsProcessor = new SettingsProcessor(settingsUri);
