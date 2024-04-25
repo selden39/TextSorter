@@ -16,14 +16,8 @@ public class FileReader {
         fileData = new ArrayList<>();
     }
 
-    public void addFileData(){
+    public void addFileData() throws Exception{
         Path filePath = Paths.get(fileUri);
-        try {
-            Files.lines(filePath).forEach(string -> {
-                fileData.add(string);
-            });
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        Files.lines(filePath).forEach(string -> fileData.add(string));
     }
 }

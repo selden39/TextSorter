@@ -1,5 +1,13 @@
-inputPath=src/main/resources/input.txt
-orderBy=asc
-outputPath=src/main/resources/output.txt
+****************************************
+**inputPath=src/main/resources/input
+**orderBy=asc
+**outputPath=src/main/resources/
+**suffix=sorted
+****************************************
 
+inputPath=src/main/resources/
+orderBy=desc
+outputPath=src/main/resources/
+suffix=_sorted
+//inputPath=src/main/resources/input.jpg
 a12  34 = лдж  лд
